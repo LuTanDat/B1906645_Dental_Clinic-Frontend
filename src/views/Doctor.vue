@@ -3,7 +3,7 @@
         <div class="col-md-12">
             <InputSearch v-model="searchText" />
         </div>
-        <div class="mt-3">
+        <div class="mt-3 col-md-12">
             <h3>
                 Danh Sách Bác Sĩ
                 <i class="fa-solid fa-user-doctor "></i>
@@ -59,9 +59,9 @@
                     DANH SÁCH BỆNH NHÂN ĐẶT LỊCH KHÁM
                 </h4>
 
-                <div>
+                <div class="row">
                     <div
-                        class="col-3 mt-3 mb-3 floatLeft"
+                        class="col-3 mt-3 mb-3"
                         v-for="regUserInfo in regUserInfos"
                         :key="regUserInfo.name"
                     >
@@ -76,7 +76,6 @@
                                 <h5 class="text-center">Kinh nghiệm: {{ regUserInfo.experience }}</h5>
                             </div>
                     </div>
-                    <div style="clear: both;"></div>
                 </div>
             </div>
         </div>
@@ -145,8 +144,8 @@ export default {
         // Chuyển các đối tượng doctor thành chuỗi để tiện cho tìm kiếm.
         doctorStrings() {
             return this.doctors.map((doctor) => {
-                const { name, email, address, phone } = doctor;
-                return [name, email, address, phone].join("");
+                const { name, position, educationLevel, experience } = doctor;
+                return [name, position, educationLevel, experience].join("");
             });
         },
         // Trả về các doctor có chứa thông tin cần tìm kiếm.

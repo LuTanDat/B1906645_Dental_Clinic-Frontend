@@ -8,9 +8,9 @@ export default {
 </script>
 
 <template>
-    <div>
+    <div class="row">
         <div
-            class="col-3 mt-3 mb-3 floatLeft"
+            class="col-3 mt-3 mb-3"
             v-for="doctor in doctors"
             :key="doctor.name"
         >
@@ -36,10 +36,9 @@ export default {
                     }"
                 >
                     <span v-if="isAdmin" class="mt-2 badge badge-warning mr-3">
-                        <i class="fas fa-edit"></i> Hiệu chỉnh</span
+                        <i class="fas fa-edit"></i>Hiệu chỉnh</span
                     >
                 </router-link>
         </div>
-        <div style="clear: both;"></div>
     </div>
 </template>
