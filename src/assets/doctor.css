@@ -50,16 +50,16 @@
 #img{
     background-image: url("/images/BG.png"); 
     position: fixed;
-    left: 50%;
+    /* left: 50%;
     top: 50%;
     bottom: auto;
-    right: auto;
+    right: auto; */
     min-width: 100%;
     min-height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transform: translateX(-50%) translateY(-50%);
+    /* transform: translateX(-50%) translateY(-50%); */
     z-index: -100;
 }
 

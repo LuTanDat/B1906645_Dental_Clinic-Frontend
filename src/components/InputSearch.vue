@@ -19,7 +19,7 @@ export default {
     <div class="text-center row p-3">
         <div class="col-9">
             <label for="textInput" class="h4"> Tìm kiếm </label>
-            <input id="textInput" placeholder="Tìm Bác Sĩ, Chuyên Khoa Điều Trị, Triệu Chứng Bệnh..." class="inputSearchTravel"
+            <input id="textInput" placeholder="Bạn muốn tìm Bác sĩ nào nè ????" class="inputSearchTravel"
 
                 type="text"
                 :value="modelValue"
